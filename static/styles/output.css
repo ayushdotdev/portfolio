@@ -3,12 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 body {
   background-color: #000;
   color: #fff;
   font-family: "JetBrains Mono";
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -50,7 +52,7 @@ body {
 }
 
 .hero {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +118,19 @@ body {
 }
 
 .about {
-  color: green;
+  height: 50vh;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 2rem;
+}
+.about h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.about p {
+  font-size: 1.1rem;
+  color: #666;
 }
 
 /*# sourceMappingURL=output.css.map */

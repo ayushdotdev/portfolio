@@ -17,14 +17,17 @@ $border: #333;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 body {
   background-color: $bg;
   color: $text;
   font-family: 'JetBrains Mono';
+  scroll-behavior: smooth;
   //min-height: 300vh;
 }
+
 
 .navbar {
   position: fixed;
@@ -73,7 +76,7 @@ body {
 }
 
 .hero {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,5 +159,19 @@ body {
 
 
 .about {
-  color: green;
+  height: 50vh;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 2rem;
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-dim;
+  }
 }
